@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <!-- Transparent Background -->
+  <!-- Zoomed Logo 't' with red square accents -->
+  <g id="twinroots-logo-mark">
+    <!-- Top Red Square Accent above stem -->
+    <rect x="91" y="24" width="22" height="22" fill="#e52535" rx="2"/>
+
+    <!-- Right Red Square Accent adjacent to crossbar -->
+    <rect x="146" y="74" width="20" height="20" fill="#e52535" rx="2"/>
+
+    <!-- White 't' Crossbar -->
+    <rect x="65" y="74" width="81" height="24" fill="#ffffff"/>
+
+    <!-- White 't' Vertical Stem with Bottom Curve -->
+    <path d="M 91 46 
+             L 113 46 
+             L 113 130 
+             C 113 148 123 158 142 158 
+             L 150 158 
+             L 150 178 
+             C 142 180 128 180 115 174 
+             C 97 165 91 148 91 128 
+             Z" 
+          fill="#ffffff"/>
+  </g>
+</svg>
