@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Twinroots | A Complete Solution Partner - Insurance, Loans, Vehicle Sales, Driver Rental & Job Consultation</title>
+  <meta name="description" content="Twinroots - Your premier multi-service partner in Kerala for General & Health Insurance, Home & Vehicle Loans, Professional Rent-a-Driver, Verified Vehicle Sales, and Career Job Consultation." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+
+  <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Malayalam:wght@400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#151853',
+              navyDark: '#0e1038',
+              navyLight: '#1f2470',
+              red: '#e62837',
+              redDark: '#c51d2a',
+              redLight: '#ff4d5a',
+              accent: '#38bdf8'
+            }
+          },
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            display: ['Outfit', 'sans-serif'],
+            malayalam: ['Noto Sans Malayalam', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .glass-nav {
+      background: rgba(21, 24, 83, 0.95);
+      backdrop-filter: blur(12px);
+    }
+    .hero-gradient {
+      background: linear-gradient(135deg, #0e1038 0%, #151853 50%, #1c216b 100%);
+    }
+    .card-hover {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .card-hover:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 30px -10px rgba(21, 24, 83, 0.15);
+    }
+    @keyframes pulse-subtle {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+    .animate-pulse-subtle {
+      animation: pulse-subtle 3s infinite ease-in-out;
+    }
+  </style>
+</head>
+<body class="font-sans text-slate-800 bg-slate-50 antialiased selection:bg-brand-red selection:text-white">
+
+  <!-- TOP INFO BAR -->
+  <header class="bg-brand-navyDark text-slate-300 text-xs sm:text-sm border-b border-brand-navy/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-5 flex-wrap justify-center sm:justify-start">
+        <a href="tel:8075996879" class="inline-flex items-center gap-2 hover:text-white transition-colors">
+          <i class="fa-solid fa-phone text-brand-red"></i>
+          <span class="font-medium">+91 8075996879</span>
+        </a>
+        <a href="mailto:twinrootskerala@gmail.com" class="inline-flex items-center gap-2 hover:text-white transition-colors">
+          <i class="fa-solid fa-envelope text-brand-red"></i>
+          <span>twinrootskerala@gmail.com</span>
+        </a>
+        <span class="hidden md:inline-flex items-center gap-2 text-slate-400">
+          <i class="fa-solid fa-location-dot text-brand-red"></i> Mukkam - Calicut, Kerala
+        </span>
+      </div>
+      <div class="flex items-center gap-3">
+        <span class="text-xs bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 px-2.5 py-0.5 rounded-full font-medium flex items-center gap-1.5">
+          <span class="w-1.5 h-1.5 bg-emerald-400 rounded-full animate-ping"></span> Active Support 24/7
+        </span>
+        <a href="https://wa.me/918075996879?text=Hello%20Twinroots,%20I%20would%20like%20to%20know%20more%20about%20your%20services" target="_blank" rel="noopener noreferrer" class="text-xs bg-emerald-600 hover:bg-emerald-500 text-white px-3 py-1 rounded-full font-semibold transition inline-flex items-center gap-1.5">
+          <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN NAVIGATION -->
+  <nav class="sticky top-0 z-50 glass-nav border-b border-white/15 text-white shadow-2xl transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-24">
+        
+        <!-- ZOOMED & HIGHLIGHTED TWINROOTS BRAND LINK -->
+        <a href="#home" class="flex items-center gap-3.5 group transform transition-transform duration-300 hover:scale-105" title="Twinroots - Home">
+          <!-- Pure Logo Mark - Clean & Extra Large -->
+          <div class="h-16 w-16 sm:h-20 sm:w-20 flex items-center justify-center transition-all duration-300">
+            <img 
+              src="assets/logo.svg" 
+              alt="Twinroots Logo" 
+              class="h-full w-full object-contain drop-shadow-xl transition-transform duration-300 group-hover:scale-115"
+            />
+          </div>
+          <div class="flex flex-col">
+            <div class="flex items-center gap-1.5">
+              <span class="font-display font-black text-3xl sm:text-4xl tracking-wider text-white drop-shadow-lg group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:via-slate-100 group-hover:to-red-200 transition-all">TWIN<span class="text-white">ROOTS</span></span>
+              <span class="w-2.5 h-2.5 rounded-sm bg-brand-red inline-block shadow-sm group-hover:rotate-45 transition-transform"></span>
+            </div>
+            <p class="text-[11px] sm:text-xs tracking-[0.2em] uppercase font-extrabold text-amber-300 drop-shadow">A Complete Solution Partner</p>
+          </div>
+        </a>
+
+        <!-- ZOOMED & HIGHLIGHTED DESKTOP MENU LINKS -->
+        <div class="hidden lg:flex items-center gap-3 font-bold text-base text-slate-100">
+          <a href="#home" class="px-4 py-2 rounded-xl hover:bg-white/15 hover:text-white transition-all text-slate-200">Home</a>
+          <a href="#about" class="px-4 py-2 rounded-xl bg-white/10 text-white hover:bg-brand-red hover:text-white transition-all shadow-sm border border-white/20 flex items-center gap-1.5">
+            <i class="fa-solid fa-users text-xs text-brand-red group-hover:text-white"></i>
+            <span>About Us</span>
+          </a>
+          
+          <!-- Services Dropdown -->
+          <div class="relative group">
+            <button class="flex items-center gap-2 px-4 py-2 rounded-xl hover:bg-white/15 hover:text-white transition-all">
+              <span>Services</span> 
+              <i class="fa-solid fa-chevron-down text-xs transition-transform group-hover:rotate-180 text-slate-300"></i>
+            </button>
+            <div class="absolute left-0 top-full w-72 pt-3 hidden group-hover:block transition-all opacity-0 group-hover:opacity-100">
+              <div class="bg-brand-navyDark border-2 border-white/20 rounded-2xl shadow-2xl p-2.5 flex flex-col gap-1.5 text-sm">
+                <a href="#insurance" class="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-white/15 transition group/item">
+                  <div class="w-9 h-9 rounded-lg bg-blue-500/25 text-blue-400 flex items-center justify-center text-base group-hover/item:scale-110 transition"><i class="fa-solid fa-shield-halved"></i></div>
+                  <div><p class="font-bold text-white">Insurance</p><p class="text-xs text-slate-400">Health, Motor & Life</p></div>
+                </a>
+                <a href="#loans" class="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-white/15 transition group/item">
+                  <div class="w-9 h-9 rounded-lg bg-emerald-500/25 text-emerald-400 flex items-center justify-center text-base group-hover/item:scale-110 transition"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                  <div><p class="font-bold text-white">House & Vehicle Loans</p><p class="text-xs text-slate-400">Best Interest Rates</p></div>
+                </a>
+                <a href="#driver" class="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-white/15 transition group/item">
+                  <div class="w-9 h-9 rounded-lg bg-amber-500/25 text-amber-400 flex items-center justify-center text-base group-hover/item:scale-110 transition"><i class="fa-solid fa-id-card"></i></div>
+                  <div><p class="font-bold text-white">Rent a Driver</p><p class="text-xs text-slate-400">Verified Chauffeurs</p></div>
+                </a>
+                <a href="#vehicles" class="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-white/15 transition group/item">
+                  <div class="w-9 h-9 rounded-lg bg-purple-500/25 text-purple-400 flex items-center justify-center text-base group-hover/item:scale-110 transition"><i class="fa-solid fa-car-side"></i></div>
+                  <div><p class="font-bold text-white">Vehicle Sales</p><p class="text-xs text-slate-400">Buy & Sell Certified Cars</p></div>
+                </a>
+                <a href="#consultation" class="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-white/15 transition group/item">
+                  <div class="w-9 h-9 rounded-lg bg-rose-500/25 text-rose-400 flex items-center justify-center text-base group-hover/item:scale-110 transition"><i class="fa-solid fa-user-tie"></i></div>
+                  <div><p class="font-bold text-white">Job Consultation</p><p class="text-xs text-slate-400">Placements & Career</p></div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <a href="#calculator" class="px-4 py-2 rounded-xl hover:bg-white/15 hover:text-white transition-all text-slate-200">EMI Calculator</a>
+          <a href="#contact" class="px-4 py-2 rounded-xl hover:bg-white/15 hover:text-white transition-all text-slate-200">Contact</a>
+        </div>
+
+        <!-- ZOOMED & HIGHLIGHTED CALL BUTTON -->
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="tel:8075996879" class="bg-gradient-to-r from-brand-red to-brand-redDark hover:from-brand-redDark hover:to-brand-red text-white px-6 py-3 rounded-full font-extrabold text-base shadow-xl shadow-brand-red/40 transition-all transform hover:scale-105 active:scale-95 inline-flex items-center gap-2.5 border border-white/20">
+            <i class="fa-solid fa-phone-volume text-lg animate-pulse"></i> 
+            <span>8075 996 879</span>
+          </a>
+        </div>
+
+        <!-- MOBILE MENU BUTTON -->
+        <button id="mobileMenuBtn" class="lg:hidden p-2 text-white hover:text-brand-red focus:outline-none" aria-label="Toggle Navigation">
+          <i class="fa-solid fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- MOBILE MENU DRAWER -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-brand-navyDark/98 border-t border-white/10 px-4 py-6 space-y-4">
+      <a href="#home" class="mobile-nav-link block text-lg font-medium text-slate-200 hover:text-brand-red">Home</a>
+      <a href="#about" class="mobile-nav-link block text-lg font-semibold text-white hover:text-brand-red flex items-center gap-2">
+        <i class="fa-solid fa-users text-brand-red text-sm"></i> About Us (True Way)
+      </a>
+      <div class="py-2 border-y border-white/10 space-y-2">
+        <p class="text-xs font-bold text-slate-400 tracking-wider uppercase">Our Services</p>
+        <a href="#insurance" class="mobile-nav-link flex items-center gap-3 text-slate-200 hover:text-brand-red py-1">
+          <i class="fa-solid fa-shield-halved text-blue-400 w-5"></i> Insurance Solutions
+        </a>
+        <a href="#loans" class="mobile-nav-link flex items-center gap-3 text-slate-200 hover:text-brand-red py-1">
+          <i class="fa-solid fa-hand-holding-dollar text-emerald-400 w-5"></i> House & Vehicle Loans
+        </a>
+        <a href="#driver" class="mobile-nav-link flex items-center gap-3 text-slate-200 hover:text-brand-red py-1">
+          <i class="fa-solid fa-id-card text-amber-400 w-5"></i> Rent a Driver
+        </a>
+        <a href="#vehicles" class="mobile-nav-link flex items-center gap-3 text-slate-200 hover:text-brand-red py-1">
+          <i class="fa-solid fa-car-side text-purple-400 w-5"></i> Vehicle Sales
+        </a>
+        <a href="#consultation" class="mobile-nav-link flex items-center gap-3 text-slate-200 hover:text-brand-red py-1">
+          <i class="fa-solid fa-user-tie text-rose-400 w-5"></i> Job Consultation
+        </a>
+      </div>
+      <a href="#calculator" class="mobile-nav-link block text-lg font-medium text-slate-200 hover:text-brand-red">EMI Calculator</a>
+      <a href="#contact" class="mobile-nav-link block text-lg font-medium text-slate-200 hover:text-brand-red">Contact Us</a>
+      
+      <div class="pt-4 flex flex-col gap-3">
+        <a href="tel:8075996879" class="w-full bg-brand-red hover:bg-brand-redDark text-white py-3 rounded-xl font-bold text-center flex items-center justify-center gap-2">
+          <i class="fa-solid fa-phone"></i> Call: +91 8075996879
+        </a>
+        <a href="mailto:twinrootskerala@gmail.com" class="w-full bg-white/10 hover:bg-white/20 text-white py-3 rounded-xl font-medium text-center flex items-center justify-center gap-2">
+          <i class="fa-solid fa-envelope"></i> twinrootskerala@gmail.com
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="relative hero-gradient text-white overflow-hidden py-16 lg:py-24">
+    <!-- Subtle Background Glow Elements -->
+    <div class="absolute -top-40 -right-40 w-96 h-96 bg-brand-red/15 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-blue-500/15 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Hero Text: Official About Us & True Way Story (From Poster) -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          
+          <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-xs sm:text-sm font-semibold text-slate-200 shadow-inner">
+            <span class="w-2 h-2 rounded-full bg-brand-red animate-ping"></span>
+            About Us • Twinroots & “True Way”
+          </div>
+
+          <h1 class="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight text-white">
+            A Startup Founded by Two Friends Based in <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-400 via-rose-300 to-amber-200">Calicut</span>.
+          </h1>
+
+          <div class="space-y-4 text-slate-200 text-sm sm:text-base leading-relaxed font-normal">
+            <p class="font-medium text-white text-base sm:text-lg">
+              <strong>Twinroots</strong> is a startup founded by two friends based in <strong>Calicut</strong>. One of our primary ventures under Twinroots is <strong class="text-white bg-white/15 px-2 py-0.5 rounded-lg border border-white/20">“True Way.”</strong> As the name suggests, True Way aims to provide the right solutions to the real-life challenges people face.
+            </p>
+
+            <p class="text-slate-300">
+              Our journey began after extensive market research, which helped us identify the genuine needs and gaps in the market. Through True Way, we strive to bridge those gaps and deliver meaningful services that make a difference.
+            </p>
+
+            <div class="bg-white/10 backdrop-blur-sm p-4 rounded-2xl border border-white/15 text-xs sm:text-sm text-slate-200 space-y-2 shadow-inner">
+              <p>
+                In collaboration with leading banks and NBFCs across Kerala, we offer <strong class="text-white">vehicle loans, home loans, and property loans</strong> at competitive interest rates, tailored to meet each customer’s needs.
+              </p>
+              <p class="text-slate-300">
+                We also act as consultants for <strong class="text-white">vehicle insurance</strong>, assist in <strong class="text-white">buying and selling vehicles</strong>, provide <strong class="text-white">driver facilitation services</strong>, connect employers and job seekers through an integrated recruitment network, and provide <strong class="text-white">marketing strategies and sales training programs</strong> to help businesses grow.
+              </p>
+            </div>
+
+            <!-- Mission Banner -->
+            <div class="p-4 rounded-2xl bg-gradient-to-r from-brand-red/30 via-brand-navyDark to-brand-navy border border-brand-red/40 text-xs sm:text-sm shadow-lg">
+              <p class="font-semibold text-amber-200 italic leading-relaxed">
+                <i class="fa-solid fa-bullseye text-brand-red text-base mr-2"></i>
+                <strong>Our Mission:</strong> “To create trusted pathways that help individuals and businesses move forward the True Way.”
+              </p>
+            </div>
+          </div>
+
+          <!-- Quick Contact Badges from Poster -->
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 text-xs sm:text-sm font-bold text-slate-200 pt-1">
+            <a href="tel:8075996879" class="hover:text-brand-red transition flex items-center gap-2 bg-white/10 px-3.5 py-1.5 rounded-xl border border-white/15">
+              <i class="fa-solid fa-phone text-brand-red"></i> 8075 996 879
+            </a>
+            <a href="mailto:twinrootskerala@gmail.com" class="hover:text-brand-red transition flex items-center gap-2 bg-white/10 px-3.5 py-1.5 rounded-xl border border-white/15">
+              <i class="fa-solid fa-envelope text-brand-red"></i> twinrootskerala@gmail.com
+            </a>
+            <span class="flex items-center gap-2 bg-white/10 px-3.5 py-1.5 rounded-xl border border-white/15 text-slate-300">
+              <i class="fa-solid fa-location-dot text-brand-red"></i> Mukkam - Calicut
+            </span>
+          </div>
+
+          <!-- Hero Buttons - Zoomed & Highlighted -->
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-3">
+            <a href="tel:8075996879" class="w-full sm:w-auto bg-gradient-to-r from-brand-red to-brand-redDark hover:from-brand-redDark hover:to-brand-red text-white px-8 py-4 rounded-2xl font-extrabold text-base shadow-2xl shadow-brand-red/50 transition-all transform hover:scale-105 active:scale-95 flex items-center justify-center gap-3 border border-white/20">
+              <i class="fa-solid fa-phone text-lg animate-pulse"></i>
+              <span>Call 8075 996 879</span>
+            </a>
+            <a href="https://wa.me/918075996879?text=Hello%20Twinroots,%20I%20read%20about%20your%20True%20Way%20venture%20and%20would%20like%20to%20know%20more" target="_blank" class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white px-8 py-4 rounded-2xl font-extrabold text-base transition-all transform hover:scale-105 active:scale-95 flex items-center justify-center gap-3 shadow-xl">
+              <i class="fa-brands fa-whatsapp text-xl"></i>
+              <span>Chat on WhatsApp</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Official About Us Poster (Image 2) & Quick Action Card -->
+        <div class="lg:col-span-5 space-y-4">
+          <div class="bg-gradient-to-b from-brand-navyDark via-brand-navy to-brand-navyDark rounded-3xl p-5 sm:p-6 text-white shadow-2xl border-2 border-white/20 relative overflow-hidden">
+            
+            <div class="flex items-center justify-between pb-3 border-b border-white/15 mb-3">
+              <div class="flex items-center gap-3">
+                <div class="w-12 h-12 flex items-center justify-center">
+                  <img src="assets/logo.svg" alt="Twinroots Logo" class="h-full w-full object-contain drop-shadow-lg" />
+                </div>
+                <div>
+                  <h3 class="font-display font-black text-lg tracking-wider text-white">TWINROOTS</h3>
+                  <p class="text-[9px] tracking-widest text-slate-300 uppercase">True Way Initiative</p>
+                </div>
+              </div>
+              <span class="px-3 py-1 rounded-full bg-brand-red text-white text-xs font-bold shadow">
+                <i class="fa-solid fa-location-pin text-[10px] mr-1"></i> Mukkam, Calicut
+              </span>
+            </div>
+
+            <!-- Official About Us Poster Display (Image 2) -->
+            <div class="rounded-2xl overflow-hidden shadow-2xl border-2 border-white/20 bg-black/40 mb-4 group relative">
+              <img 
+                src="assets/about-english.jpg" 
+                alt="Twinroots True Way About Us Poster" 
+                class="w-full h-auto object-contain max-h-[460px] mx-auto rounded-xl transition duration-500 group-hover:scale-105"
+              />
+            </div>
+
+            <div class="flex items-center gap-2.5">
+              <a href="tel:8075996879" class="flex-1 bg-brand-red hover:bg-brand-redDark text-white py-3 rounded-xl font-bold text-xs text-center transition flex items-center justify-center gap-1.5 shadow-lg shadow-brand-red/30">
+                <i class="fa-solid fa-phone"></i> Call 8075 996 879
+              </a>
+              <a href="https://wa.me/918075996879?text=Hello%20Twinroots,%20I%20read%20about%20your%20True%20Way%20venture%20and%20want%20to%20know%20more" target="_blank" class="flex-1 bg-emerald-600 hover:bg-emerald-500 text-white py-3 rounded-xl font-bold text-xs text-center transition flex items-center justify-center gap-1.5 shadow">
+                <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK STATS BAR -->
+  <section class="bg-white border-b border-slate-200 py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100">
+          <p class="font-display font-black text-3xl sm:text-4xl text-brand-navy">500+</p>
+          <p class="text-xs sm:text-sm font-semibold text-slate-500 mt-1">Satisfied Clients</p>
+        </div>
+        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100">
+          <p class="font-display font-black text-3xl sm:text-4xl text-brand-red">₹50Cr+</p>
+          <p class="text-xs sm:text-sm font-semibold text-slate-500 mt-1">Loans Facilitated</p>
+        </div>
+        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100">
+          <p class="font-display font-black text-3xl sm:text-4xl text-brand-navy">100%</p>
+          <p class="text-xs sm:text-sm font-semibold text-slate-500 mt-1">Verified Drivers</p>
+        </div>
+        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100">
+          <p class="font-display font-black text-3xl sm:text-4xl text-brand-red">5-in-1</p>
+          <p class="text-xs sm:text-sm font-semibold text-slate-500 mt-1">Comprehensive Partner</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT US & SERVICES SECTION (MALAYALAM FIRST, THEN ENGLISH) -->
+  <section id="about" class="py-20 bg-white border-b border-slate-200 relative overflow-hidden">
+    <!-- Subtle Ambient Glow -->
+    <div class="absolute top-0 right-0 w-96 h-96 bg-brand-navy/5 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute bottom-0 left-0 w-80 h-80 bg-brand-red/5 rounded-full blur-2xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Section Header Bar -->
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 mb-10 pb-6 border-b border-slate-200">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-brand-red">സേവനങ്ങളുടെ വിവരങ്ങൾ • Services Portfolio</span>
+          <h2 class="font-display font-black text-2xl sm:text-3xl text-brand-navy">ഞങ്ങളുടെ സേവനങ്ങൾ (Twinroots Services)</h2>
+        </div>
+        <!-- Quick Nav Buttons -->
+        <div class="flex items-center gap-2">
+          <a href="#home" class="px-4 py-2 rounded-xl font-bold text-xs sm:text-sm bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all flex items-center gap-2 border border-slate-200">
+            <i class="fa-solid fa-arrow-up text-brand-red"></i>
+            <span>English Story (Hero)</span>
+          </a>
+          <a href="tel:8075996879" class="px-4 py-2 rounded-xl font-bold text-xs sm:text-sm bg-brand-navy hover:bg-brand-navyLight text-white transition-all flex items-center gap-2 shadow-sm">
+            <i class="fa-solid fa-phone text-brand-red"></i>
+            <span>8075 996 879</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- ================= 1. MALAYALAM CONTENT (FIRST & ACTIVE) ================= -->
+      <div id="contentMalayalam" class="space-y-12">
+        <div class="grid lg:grid-cols-12 gap-10 items-start">
+          
+          <!-- Left Column: Malayalam Services & Profile -->
+          <div class="lg:col-span-7 space-y-6">
+            
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-navy/5 border border-brand-navy/15 text-xs font-bold uppercase tracking-wider text-brand-navy">
+              <span class="w-2 h-2 rounded-full bg-brand-red animate-pulse"></span>
+              <span>ഞങ്ങളുടെ സേവനങ്ങൾ • Mukkam, Calicut</span>
+            </div>
+
+            <h3 class="font-display font-black text-3xl sm:text-4xl text-brand-navy font-malayalam leading-tight">
+              ട്വിൻറൂട്ട്സ് — <span class="text-brand-red">ഞങ്ങളുടെ സേവനങ്ങൾ</span>
+            </h3>
+
+            <p class="text-base sm:text-lg text-slate-700 font-malayalam leading-relaxed">
+              കാലിക്കറ്റ് <strong>മുക്കത്ത്</strong> രണ്ട് സുഹൃത്തുക്കൾ ചേർന്ന് ആരംഭിച്ച ഒരു കംപ്ലീറ്റ് സൊല്യൂഷൻ പാർട്ണർ സംരംഭമാണ് <strong>TWINROOTS</strong>. ജീവിതത്തിലും ബിസിനസിലും ആളുകൾ നേരിടുന്ന ആവശ്യങ്ങൾക്ക് വിശ്വസ്തതയോടെയുള്ള യഥാർത്ഥ പരിഹാരങ്ങൾ ഞങ്ങൾ ഒരു കുടക്കീഴിൽ നൽകുന്നു.
+            </p>
+
+            <!-- 6 Services in Malayalam (Cards Grid) -->
+            <div class="grid sm:grid-cols-2 gap-4 pt-2">
+              
+              <!-- 1. ലോൺ സേവനങ്ങൾ -->
+              <div class="bg-slate-50 hover:bg-white p-5 rounded-2xl border border-slate-200 hover:border-brand-navy hover:shadow-md transition-all">
+                <div class="w-10 h-10 rounded-xl bg-emerald-500/15 text-emerald-700 flex items-center justify-center text-lg mb-3">
+                  <i class="fa-solid fa-hand-holding-dollar"></i>
+                </div>
+                <h4 class="font-bold text-base text-brand-navy font-malayalam mb-2">ലോൺ സേവനങ്ങൾ</h4>
+                <ul class="space-y-1.5 text-xs text-slate-600 font-malayalam">
+                  <li class="flex items-start gap-1.5"><i class="fa-solid fa-check text-brand-red mt-1"></i> 2011 മുതലുള്ള വാഹനങ്ങൾക്ക് ലോൺ സൗകര്യം.</li>
+                  <li class="flex items-start gap-1.5"><i class="fa-solid fa-check text-brand-red mt-1"></i> ഭവന വായ്പകൾ & പ്രോപ്പർട്ടി ലോണുകൾ.</li>
+                  <li class="flex items-start gap-1.5"><i class="fa-solid fa-check text-brand-red mt-1"></i> കുറഞ്ഞ പലിശ നിരക്കുകൾ & കുറഞ്ഞ ഡോക്യുമെന്റേഷൻ.</li>
+                  <li class="flex items-start gap-1.5"><i class="fa-solid fa-check text-brand-red mt-1"></i> കേരളത്തിലെ പ്രമുഖ ബാങ്കുകളുടേയും NBFCകളുടെയും സേവനം.</li>
+                </ul>
+              </div>
+
+              <!-- 2. ഇൻഷുറൻസ് സേവനം -->
+              <div class="bg-slate-50 hover:bg-white p-5 rounded-2xl border border-slate-200 hover:border-brand-navy hover:shadow-md transition-all">
+                <div class="w-10 h-10 rounded-xl bg-blue-500/15 text-blue-700 flex items-center justify-center text-lg mb-3">
+                  <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <h4 class="font-bold text-base text-brand-navy font-malayalam mb-2">ഇൻഷുറൻസ് സേവനം</h4>
+                <ul class="space-y-1.5 text-xs text-slate-600 font-malayalam">
+                  <li class="flex items-start gap-1.5"><i class="fa-solid fa-check text-brand-red mt-1"></i> പ്രമുഖ കമ്പനികളുടെ വാഹന - ഹെൽത്ത് ഇൻഷുറൻസ്.</li>
+                  <li class="flex items-start gap-1.5"><i class="fa-solid fa-check text-brand-red mt-1"></i> കുറഞ്ഞ പ്രീമിയം & ഡോർ സ്റ്റെപ്പ് സർവീസ്.</li>
+                  <li class="flex items-start gap-1.5"><i class="fa-solid fa-check text-brand-red mt-1"></i> 24 x 7 ഓൺലൈൻ സേവനം.</li>
+                  <li class="flex items-start gap-1.5"><i class="fa-solid fa-check text-brand-red mt-1"></i> RC, പഴയ ഇൻഷുറൻസ് അയച്ച് തന്നാൽ ഉടൻ പുതുക്കാം.</li>
+                </ul>
+              </div>
+
+              <!-- 3. പഴയ വാഹനങ്ങൾ -->
+              <div class="bg-slate-50 hover:bg-white p-5 rounded-2xl border border-slate-200 hover:border-brand-navy hover:shadow-md transition-all">
+                <div class="w-10 h-10 rounded-xl bg-purple-500/15 text-purple-700 flex items-center justify-center text-lg mb-3">
+                  <i class="fa-solid fa-car-side"></i>
+                </div>
+                <h4 class="font-bold text-base text-brand-navy font-malayalam mb-2">പഴയ വാഹനങ്ങൾ വാങ്ങാനും വിൽക്കാനും</h4>
+                <ul class="space-y-1.5 text-xs text-slate-600 font-malayalam">
+                  <li class="flex items-start gap-1.5"><i class="fa-solid fa-check text-brand-red mt-1"></i> കൈവശമുള്ള വാഹനങ്ങൾ വിൽക്കാനോ വാങ്ങാനോ ബന്ധപ്പെടാം.</li>
+                  <li class="flex items-start gap-1.5"><i class="fa-solid fa-check text-brand-red mt-1"></i> വീഡിയോകൾ, സോഷ്യൽ മീഡിയ പോസ്റ്ററുകൾ വഴി വിപണനം.</li>
+                  <li class="flex items-start gap-1.5"><i class="fa-solid fa-check text-brand-red mt-1"></i> യൂസ്ഡ് വെഹിക്കിൾ ഡീലേഴ്സിനും കാര്യക്ഷമമായി ഉപയോഗിക്കാം.</li>
+                </ul>
+              </div>
+
+              <!-- 4. സെയിൽ & മാർക്കറ്റിങ് -->
+              <div class="bg-slate-50 hover:bg-white p-5 rounded-2xl border border-slate-200 hover:border-brand-navy hover:shadow-md transition-all">
+                <div class="w-10 h-10 rounded-xl bg-rose-500/15 text-rose-700 flex items-center justify-center text-lg mb-3">
+                  <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <h4 class="font-bold text-base text-brand-navy font-malayalam mb-2">സെയിൽ & മാർക്കറ്റിങ് സർവ്വീസ്</h4>
+                <ul class="space-y-1.5 text-xs text-slate-600 font-malayalam">
+                  <li class="flex items-start gap-1.5"><i class="fa-solid fa-check text-brand-red mt-1"></i> ബിസിനസ് മാർക്കറ്റിങ് ഉപദേശങ്ങളും സെയിൽസ് മെറ്റീരിയലുകളും.</li>
+                  <li class="flex items-start gap-1.5"><i class="fa-solid fa-check text-brand-red mt-1"></i> വിൽപന വർദ്ധിപ്പിക്കാൻ സെയിൽസ് ട്രെയിനിംഗ് പ്രോഗ്രാം.</li>
+                  <li class="flex items-start gap-1.5"><i class="fa-solid fa-check text-brand-red mt-1"></i> ആകർഷകമായ കണ്ടന്റുകൾ & സോഷ്യൽ മീഡിയ ക്യാപ്ഷനുകൾ.</li>
+                </ul>
+              </div>
+
+              <!-- 5. ഡ്രൈവർ ഫാക്കൽറ്റി -->
+              <div class="bg-slate-50 hover:bg-white p-5 rounded-2xl border border-slate-200 hover:border-brand-navy hover:shadow-md transition-all">
+                <div class="w-10 h-10 rounded-xl bg-amber-500/15 text-amber-700 flex items-center justify-center text-lg mb-3">
+                  <i class="fa-solid fa-id-card"></i>
+                </div>
+                <h4 class="font-bold text-base text-brand-navy font-malayalam mb-2">ഡ്രൈവർ ഫാക്കൽറ്റി</h4>
+                <ul class="space-y-1.5 text-xs text-slate-600 font-malayalam">
+                  <li class="flex items-start gap-1.5"><i class="fa-solid fa-check text-brand-red mt-1"></i> യാത്രകൾ സുരക്ഷിതവും മടുപ്പില്ലാത്തതുമാക്കാൻ ഡ്രൈവേഴ്സ്.</li>
+                  <li class="flex items-start gap-1.5"><i class="fa-solid fa-check text-brand-red mt-1"></i> കുറഞ്ഞ നിരക്കിൽ എക്സ്പീരിയൻസ്ഡ് ആയ ഡ്രൈവർമാർ.</li>
+                  <li class="flex items-start gap-1.5"><i class="fa-solid fa-check text-brand-red mt-1"></i> ലോക്കൽ & ഔട്ട്സ്റ്റേഷൻ ട്രിപ്പുകൾ.</li>
+                </ul>
+              </div>
+
+              <!-- 6. തൊഴിൽ സേവനങ്ങൾ -->
+              <div class="bg-slate-50 hover:bg-white p-5 rounded-2xl border border-slate-200 hover:border-brand-navy hover:shadow-md transition-all">
+                <div class="w-10 h-10 rounded-xl bg-teal-500/15 text-teal-700 flex items-center justify-center text-lg mb-3">
+                  <i class="fa-solid fa-user-group"></i>
+                </div>
+                <h4 class="font-bold text-base text-brand-navy font-malayalam mb-2">തൊഴിൽ സേവനങ്ങൾ</h4>
+                <ul class="space-y-1.5 text-xs text-slate-600 font-malayalam">
+                  <li class="flex items-start gap-1.5"><i class="fa-solid fa-check text-brand-red mt-1"></i> 'TWINROOTS CONNECT' റിക്രൂട്ട്മെന്റ് നെറ്റ്‌വർക്ക്.</li>
+                  <li class="flex items-start gap-1.5"><i class="fa-solid fa-check text-brand-red mt-1"></i> തൊഴിൽ ദാതാക്കളെയും അന്വേഷകരേയും ബന്ധിപ്പിക്കുന്നു.</li>
+                  <li class="flex items-start gap-1.5"><i class="fa-solid fa-check text-brand-red mt-1"></i> ഉദ്യോഗാർത്ഥികൾക്കും കമ്പനികൾക്കും സ്വാഗതം.</li>
+                </ul>
+              </div>
+
+            </div>
+
+            <!-- Direct Malayalam Helpline Buttons -->
+            <div class="flex flex-col sm:flex-row gap-3 pt-2">
+              <a href="tel:8075996879" class="flex-1 bg-gradient-to-r from-brand-red to-brand-redDark text-white py-3.5 px-6 rounded-2xl font-bold text-sm text-center shadow-lg shadow-brand-red/30 hover:scale-105 transition flex items-center justify-center gap-2">
+                <i class="fa-solid fa-phone"></i> വിളിക്കുക: 8075 996 879
+              </a>
+              <a href="https://wa.me/918075996879?text=Hello%20Twinroots,%20I%20am%20interested%20in%20your%20services" target="_blank" class="flex-1 bg-emerald-600 hover:bg-emerald-500 text-white py-3.5 px-6 rounded-2xl font-bold text-sm text-center shadow-lg shadow-emerald-600/30 hover:scale-105 transition flex items-center justify-center gap-2">
+                <i class="fa-brands fa-whatsapp text-lg"></i> വാട്സാപ്പിൽ മെസ്സേജ് അയക്കൂ
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Malayalam Official Poster Display -->
+          <div class="lg:col-span-5 space-y-6">
+            <div class="bg-gradient-to-b from-brand-navyDark via-brand-navy to-brand-navyDark rounded-3xl p-6 sm:p-8 text-white shadow-2xl border border-white/10 relative overflow-hidden">
+              
+              <div class="flex items-center justify-between pb-4 border-b border-white/15 mb-4">
+                <div class="flex items-center gap-3">
+                <div class="w-13 h-13 sm:w-14 sm:h-14 flex items-center justify-center">
+                  <img src="assets/logo.svg" alt="Twinroots Logo" class="h-full w-full object-contain drop-shadow-lg" />
+                </div>
+                  <div>
+                    <h4 class="font-display font-black text-xl tracking-wider text-white">TWINROOTS</h4>
+                    <p class="text-[10px] tracking-widest text-slate-300 uppercase">ഔദ്യോഗിക അറിയിപ്പ്</p>
+                  </div>
+                </div>
+                <span class="px-3 py-1 rounded-full bg-brand-red text-white text-xs font-bold">മുക്കം, കാലിക്കറ്റ്</span>
+              <!-- Official Malayalam Poster Image -->
+              <div class="rounded-2xl overflow-hidden shadow-2xl border-2 border-white/20 bg-black/40 mb-5 group relative">
+                <img 
+                  src="assets/about-malayalam.jpg" 
+                  alt="Twinroots Malayalam Services Poster" 
+                  class="w-full h-auto object-contain max-h-[460px] mx-auto rounded-xl transition duration-500 group-hover:scale-105"
+                />
+              </div>
+
+              <div class="p-4 rounded-2xl bg-white/10 border border-white/15 text-xs text-slate-200 space-y-1.5 font-malayalam">
+                <p><i class="fa-solid fa-phone text-brand-red mr-1.5"></i> <strong>ഫോൺ:</strong> 8075 996 879</p>
+                <p><i class="fa-solid fa-envelope text-brand-red mr-1.5"></i> <strong>ഇമെയിൽ:</strong> twinrootskerala@gmail.com</p>
+                <p><i class="fa-solid fa-location-dot text-brand-red mr-1.5"></i> <strong>ഓഫീസ്:</strong> CALICUT, MUKKAM, KERALA</p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="services" class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <span class="text-xs sm:text-sm font-bold tracking-widest text-brand-red uppercase">Complete Solutions Portfolio</span>
+        <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-brand-navy">Everything You Need, Handled by Experts</h2>
+        <p class="text-slate-600 text-sm sm:text-base">Twinroots consolidates five essential pillars so you never have to coordinate across multiple agents or agencies.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- SERVICE 1: INSURANCE -->
+        <div id="insurance" class="bg-white rounded-3xl p-8 border border-slate-200 card-hover flex flex-col justify-between relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-24 h-24 bg-blue-500/10 rounded-bl-full pointer-events-none"></div>
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center text-2xl mb-6 shadow-sm border border-blue-100">
+              <i class="fa-solid fa-shield-heart"></i>
+            </div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-xs font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-2.5 py-0.5 rounded-md">Protection First</span>
+            </div>
+            <h3 class="font-display text-2xl font-bold text-brand-navy mb-3">Comprehensive Insurance</h3>
+            <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+              Protect what matters most. We compare top IRDAI-approved insurers to get you maximum coverage at the lowest premium rates with claim settlement support.
+            </p>
+            <ul class="space-y-2.5 text-xs sm:text-sm text-slate-700 mb-8">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Motor & Two-Wheeler Insurance (Instant Policy)</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Family Health & Critical Illness Covers</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Term Life & Retirement Savings Plans</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Commercial & Goods Vehicle Insurance</li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+            <a href="#contact" class="text-brand-navy font-bold text-sm inline-flex items-center gap-2 hover:text-brand-red transition">
+              Get Insurance Quote <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+            <a href="https://wa.me/918075996879?text=Hi%20Twinroots,%20I%20need%20assistance%20with%20Insurance%20policy" target="_blank" class="text-emerald-600 text-lg hover:scale-110 transition"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <!-- SERVICE 2: LOANS (HOUSE & VEHICLE) -->
+        <div id="loans" class="bg-white rounded-3xl p-8 border border-slate-200 card-hover flex flex-col justify-between relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-24 h-24 bg-emerald-500/10 rounded-bl-full pointer-events-none"></div>
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-2xl mb-6 shadow-sm border border-emerald-100">
+              <i class="fa-solid fa-building-columns"></i>
+            </div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-xs font-bold uppercase tracking-wider text-emerald-600 bg-emerald-50 px-2.5 py-0.5 rounded-md">Financial Solutions</span>
+            </div>
+            <h3 class="font-display text-2xl font-bold text-brand-navy mb-3">House & Vehicle Loans</h3>
+            <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+              Realize your dream home or own your desired vehicle without financial bottlenecks. We partner with leading national banks and NBFCs for lowest interest rates.
+            </p>
+            <ul class="space-y-2.5 text-xs sm:text-sm text-slate-700 mb-8">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> House Purchase & Construction Loans</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> New & Used Car / Two-Wheeler Loans</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Commercial Vehicle & Fleet Financing</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Home Loan Balance Transfer with Top-up</li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+            <a href="#calculator" class="text-brand-navy font-bold text-sm inline-flex items-center gap-2 hover:text-brand-red transition">
+              Calculate Loan EMI <i class="fa-solid fa-calculator text-xs"></i>
+            </a>
+            <a href="https://wa.me/918075996879?text=Hi%20Twinroots,%20I%20am%20looking%20for%20a%20House/Vehicle%20Loan" target="_blank" class="text-emerald-600 text-lg hover:scale-110 transition"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <!-- SERVICE 3: RENT A DRIVER -->
+        <div id="driver" class="bg-white rounded-3xl p-8 border border-slate-200 card-hover flex flex-col justify-between relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-24 h-24 bg-amber-500/10 rounded-bl-full pointer-events-none"></div>
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center text-2xl mb-6 shadow-sm border border-amber-100">
+              <i class="fa-solid fa-id-card-clip"></i>
+            </div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-xs font-bold uppercase tracking-wider text-amber-600 bg-amber-50 px-2.5 py-0.5 rounded-md">Chauffeur on Demand</span>
+            </div>
+            <h3 class="font-display text-2xl font-bold text-brand-navy mb-3">Rent a Driver Service</h3>
+            <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+              Sit back and relax in your own car. Hire licensed, courteous, background-verified professional drivers for short trips, long highway journeys, or outstation tours.
+            </p>
+            <ul class="space-y-2.5 text-xs sm:text-sm text-slate-700 mb-8">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Hourly & Daily City Driver Booking</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Outstation & Inter-District Travel</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Manual & Automatic Transmission Specialists</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Night & Weekend Emergency Drivers</li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+            <a href="#driverModal" onclick="openDriverModal()" class="text-brand-navy font-bold text-sm inline-flex items-center gap-2 hover:text-brand-red transition">
+              Book a Driver <i class="fa-solid fa-steering-wheel text-xs"></i>
+            </a>
+            <a href="https://wa.me/918075996879?text=Hi%20Twinroots,%20I%20need%20to%20hire%20a%20driver%20for%20my%20car" target="_blank" class="text-emerald-600 text-lg hover:scale-110 transition"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <!-- SERVICE 4: VEHICLE SALES -->
+        <div id="vehicles" class="bg-white rounded-3xl p-8 border border-slate-200 card-hover flex flex-col justify-between relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-24 h-24 bg-purple-500/10 rounded-bl-full pointer-events-none"></div>
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-purple-50 text-purple-600 flex items-center justify-center text-2xl mb-6 shadow-sm border border-purple-100">
+              <i class="fa-solid fa-car-burst"></i>
+            </div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-xs font-bold uppercase tracking-wider text-purple-600 bg-purple-50 px-2.5 py-0.5 rounded-md">Verified Pre-Owned</span>
+            </div>
+            <h3 class="font-display text-2xl font-bold text-brand-navy mb-3">Vehicle Sales & Exchange</h3>
+            <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+              Buy or sell quality pre-owned and commercial vehicles with complete peace of mind. Non-accidental verification, transparent pricing, and instant RC ownership transfer.
+            </p>
+            <ul class="space-y-2.5 text-xs sm:text-sm text-slate-700 mb-8">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Multi-point Quality Inspected Cars</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Hassle-Free RC Transfer & Legal Paperwork</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Fair Price Valuation for Sellers</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Easy Used Car Financing Available</li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+            <a href="#contact" class="text-brand-navy font-bold text-sm inline-flex items-center gap-2 hover:text-brand-red transition">
+              Inquire Vehicles <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+            <a href="https://wa.me/918075996879?text=Hi%20Twinroots,%20I%20am%20interested%20in%20buying/selling%20a%20vehicle" target="_blank" class="text-emerald-600 text-lg hover:scale-110 transition"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <!-- SERVICE 5: JOB CONSULTATION -->
+        <div id="consultation" class="bg-white rounded-3xl p-8 border border-slate-200 card-hover flex flex-col justify-between relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-24 h-24 bg-rose-500/10 rounded-bl-full pointer-events-none"></div>
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-rose-50 text-rose-600 flex items-center justify-center text-2xl mb-6 shadow-sm border border-rose-100">
+              <i class="fa-solid fa-user-gear"></i>
+            </div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-xs font-bold uppercase tracking-wider text-rose-600 bg-rose-50 px-2.5 py-0.5 rounded-md">Career Advancement</span>
+            </div>
+            <h3 class="font-display text-2xl font-bold text-brand-navy mb-3">Job Consultation & Placement</h3>
+            <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+              Helping job seekers find reputable employers and helping businesses recruit top talent. Specialized placement in driving, administration, customer support, and overseas.
+            </p>
+            <ul class="space-y-2.5 text-xs sm:text-sm text-slate-700 mb-8">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Driver Placement (Private, VIP & Commercial)</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Corporate & Office Staff Recruitment</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Gulf & Overseas Job Opportunities</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Resume Building & Interview Preparation</li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+            <a href="#contact" class="text-brand-navy font-bold text-sm inline-flex items-center gap-2 hover:text-brand-red transition">
+              Submit Your Resume <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+            <a href="https://wa.me/918075996879?text=Hi%20Twinroots,%20I%20am%20looking%20for%20Job%20Consultation/Placement" target="_blank" class="text-emerald-600 text-lg hover:scale-110 transition"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <!-- SERVICE 6: COMPLETE SOLUTION CARD -->
+        <div class="bg-gradient-to-br from-brand-navy to-brand-navyDark text-white rounded-3xl p-8 flex flex-col justify-between relative shadow-xl">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-white/10 text-brand-red flex items-center justify-center text-2xl mb-6 border border-white/15">
+              <i class="fa-solid fa-handshake-angle"></i>
+            </div>
+            <span class="text-xs font-bold uppercase tracking-wider text-brand-red bg-brand-red/10 border border-brand-red/30 px-2.5 py-0.5 rounded-md">Why Twinroots</span>
+            <h3 class="font-display text-2xl font-bold text-white mt-2 mb-3">Your One-Stop Venture Partner</h3>
+            <p class="text-slate-300 text-sm mb-6 leading-relaxed">
+              We save your time and eliminate stress. No more running around to multiple offices. Get your loan approved, your vehicle insured, certified drivers hired, and career consultation in one place.
+            </p>
+            <div class="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-2 text-xs text-slate-300 mb-6">
+              <p class="font-semibold text-white flex items-center gap-2">
+                <i class="fa-solid fa-phone text-brand-red"></i> Direct Helpline: +91 8075996879
+              </p>
+              <p class="text-slate-300 flex items-center gap-2">
+                <i class="fa-solid fa-envelope text-brand-red"></i> twinrootskerala@gmail.com
+              </p>
+            </div>
+          </div>
+          <a href="#contact" class="w-full bg-brand-red hover:bg-brand-redDark text-white py-3.5 rounded-xl font-bold text-center block transition shadow-lg shadow-brand-red/40">
+            Talk to an Expert Today
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INTERACTIVE EMI CALCULATOR SECTION -->
+  <section id="calculator" class="py-20 bg-white border-y border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12 space-y-2">
+        <span class="text-xs font-bold uppercase tracking-widest text-brand-red">Financial Planning Tool</span>
+        <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-brand-navy">Loan EMI Calculator</h2>
+        <p class="text-slate-600 text-sm">Estimate your monthly installments for House Loans or Vehicle Loans instantly.</p>
+      </div>
+
+      <div class="max-w-4xl mx-auto bg-slate-50 rounded-3xl p-6 sm:p-10 border border-slate-200 shadow-sm">
+        
+        <!-- Loan Type Selector -->
+        <div class="flex items-center justify-center gap-3 mb-8">
+          <button id="btnHomeLoan" onclick="setLoanType('home')" class="px-5 py-2.5 rounded-xl font-bold text-sm bg-brand-navy text-white shadow-md transition">
+            <i class="fa-solid fa-house mr-1.5"></i> House Loan
+          </button>
+          <button id="btnVehicleLoan" onclick="setLoanType('vehicle')" class="px-5 py-2.5 rounded-xl font-bold text-sm bg-white text-slate-700 border border-slate-200 hover:bg-slate-100 transition">
+            <i class="fa-solid fa-car mr-1.5"></i> Vehicle Loan
+          </button>
+        </div>
+
+        <div class="grid md:grid-cols-12 gap-8 items-center">
+          
+          <!-- Sliders -->
+          <div class="md:col-span-7 space-y-6">
+            
+            <!-- Loan Amount -->
+            <div>
+              <div class="flex justify-between items-center mb-2">
+                <label class="text-xs font-bold text-slate-700 uppercase">Loan Amount (₹)</label>
+                <span id="loanAmountText" class="font-display font-extrabold text-lg text-brand-navy">₹ 25,00,000</span>
+              </div>
+              <input type="range" id="loanAmount" min="100000" max="10000000" step="50000" value="2500000" class="w-full accent-brand-navy cursor-pointer" oninput="calculateEMI()" />
+              <div class="flex justify-between text-[11px] text-slate-400 mt-1">
+                <span>₹ 1 Lakh</span>
+                <span>₹ 50 Lakhs</span>
+                <span>₹ 1 Crore</span>
+              </div>
+            </div>
+
+            <!-- Interest Rate -->
+            <div>
+              <div class="flex justify-between items-center mb-2">
+                <label class="text-xs font-bold text-slate-700 uppercase">Interest Rate (% p.a.)</label>
+                <span id="interestRateText" class="font-display font-extrabold text-lg text-brand-navy">8.5 %</span>
+              </div>
+              <input type="range" id="interestRate" min="6" max="18" step="0.1" value="8.5" class="w-full accent-brand-navy cursor-pointer" oninput="calculateEMI()" />
+              <div class="flex justify-between text-[11px] text-slate-400 mt-1">
+                <span>6%</span>
+                <span>12%</span>
+                <span>18%</span>
+              </div>
+            </div>
+
+            <!-- Tenure -->
+            <div>
+              <div class="flex justify-between items-center mb-2">
+                <label class="text-xs font-bold text-slate-700 uppercase">Tenure (Years)</label>
+                <span id="tenureText" class="font-display font-extrabold text-lg text-brand-navy">20 Years</span>
+              </div>
+              <input type="range" id="tenure" min="1" max="30" step="1" value="20" class="w-full accent-brand-navy cursor-pointer" oninput="calculateEMI()" />
+              <div class="flex justify-between text-[11px] text-slate-400 mt-1">
+                <span>1 Year</span>
+                <span>15 Years</span>
+                <span>30 Years</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Output Box -->
+          <div class="md:col-span-5 bg-white p-6 rounded-2xl border border-slate-200 text-center space-y-4 shadow-sm">
+            <p class="text-xs font-bold uppercase text-slate-400 tracking-wider">Estimated Monthly EMI</p>
+            <div id="emiResult" class="font-display font-black text-3xl sm:text-4xl text-brand-red">₹ 21,696</div>
+            
+            <div class="pt-4 border-t border-slate-100 space-y-2 text-xs text-slate-600">
+              <div class="flex justify-between">
+                <span>Principal Amount:</span>
+                <strong id="principalText" class="text-slate-800">₹ 25,00,000</strong>
+              </div>
+              <div class="flex justify-between">
+                <span>Total Interest Payable:</span>
+                <strong id="totalInterestText" class="text-slate-800">₹ 27,06,950</strong>
+              </div>
+              <div class="flex justify-between pt-2 border-t border-slate-100 text-sm font-bold text-brand-navy">
+                <span>Total Amount:</span>
+                <span id="totalAmountText">₹ 52,06,950</span>
+              </div>
+            </div>
+
+            <a href="https://wa.me/918075996879?text=Hello%20Twinroots,%20I%20calculated%20my%20loan%20EMI%20and%20want%20to%20apply%20for%20a%20loan" target="_blank" class="w-full bg-brand-navy hover:bg-brand-navyLight text-white py-3 rounded-xl font-bold text-xs sm:text-sm block transition shadow">
+              Apply for this Loan via WhatsApp
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE TWINROOTS (THE TRUE WAY ADVANTAGE) -->
+  <section id="why-choose" class="py-20 bg-slate-50 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-6 space-y-6">
+          <span class="text-xs font-bold tracking-widest text-brand-red uppercase">The True Way Advantage</span>
+          <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-brand-navy">Why Choose Twinroots?</h2>
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+            Headquartered in <strong class="text-brand-navy font-semibold">Mukkam, Calicut</strong>, Twinroots was created to deliver genuine solutions to real-life challenges. Through our <strong>“True Way”</strong> philosophy, we streamline loans, insurance, vehicle sales, drivers, and career advancement under one unified roof.
+          </p>
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+            Whether securing your family's future, financing a home or vehicle, hiring a vetted driver, or building a sustainable career, we provide transparent guidance every step of the way.
+          </p>
+
+          <div class="grid grid-cols-2 gap-4 pt-2">
+            <div class="border-l-4 border-brand-red pl-4">
+              <h4 class="font-display font-bold text-brand-navy text-lg">Single Partner</h4>
+              <p class="text-xs text-slate-500">No need to coordinate 5 different agents</p>
+            </div>
+            <div class="border-l-4 border-brand-navy pl-4">
+              <h4 class="font-display font-bold text-brand-navy text-lg">Direct Reach</h4>
+              <p class="text-xs text-slate-500">Call 8075 996 879 directly anytime</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6 bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-md">
+          <h3 class="font-display font-bold text-2xl text-brand-navy mb-6">Our Commitments to You</h3>
+          <div class="space-y-4">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-brand-red/10 text-brand-red flex items-center justify-center font-bold flex-shrink-0">
+                1
+              </div>
+              <div>
+                <h5 class="font-bold text-brand-navy text-base">Unbiased Recommendations</h5>
+                <p class="text-xs sm:text-sm text-slate-600">We analyze products across multiple lenders and insurance providers to recommend what genuinely benefits you.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-brand-navy/10 text-brand-navy flex items-center justify-center font-bold flex-shrink-0">
+                2
+              </div>
+              <div>
+                <h5 class="font-bold text-brand-navy text-base">Verified & Licensed Network</h5>
+                <p class="text-xs sm:text-sm text-slate-600">All drivers undergo strict background checks, vehicle inspections are exhaustive, and job placements are verified.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-600 flex items-center justify-center font-bold flex-shrink-0">
+                3
+              </div>
+              <div>
+                <h5 class="font-bold text-brand-navy text-base">Dedicated Post-Service Support</h5>
+                <p class="text-xs sm:text-sm text-slate-600">We don't vanish after a deal. We stand by you during insurance claim filing, loan disbursements, and road emergencies.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT & LEAD GENERATION SECTION -->
+  <section id="contact" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-2">
+        <span class="text-xs font-bold uppercase tracking-widest text-brand-red">Get In Touch</span>
+        <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-brand-navy">Contact Twinroots Today</h2>
+        <p class="text-slate-600 text-sm sm:text-base">We are here to answer questions, guide your loans, book drivers, or consult on your career.</p>
+      </div>
+
+      <div class="grid lg:grid-cols-12 gap-12">
+        
+        <!-- Contact Information Cards -->
+        <div class="lg:col-span-5 space-y-6">
+          
+          <!-- Phone Card -->
+          <a href="tel:8075996879" class="block bg-slate-50 hover:bg-slate-100 p-6 rounded-2xl border border-slate-200 transition group">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-xl bg-brand-red text-white flex items-center justify-center text-xl shadow-md group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div>
+                <p class="text-xs font-semibold text-slate-500 uppercase">Direct Call / Helpline</p>
+                <p class="font-display font-extrabold text-xl text-brand-navy group-hover:text-brand-red transition-colors">+91 8075996879</p>
+                <p class="text-xs text-emerald-600 font-medium mt-0.5">Click to call immediately</p>
+              </div>
+            </div>
+          </a>
+
+          <!-- Email Card -->
+          <a href="mailto:twinrootskerala@gmail.com" class="block bg-slate-50 hover:bg-slate-100 p-6 rounded-2xl border border-slate-200 transition group">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-xl bg-brand-navy text-white flex items-center justify-center text-xl shadow-md group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div>
+                <p class="text-xs font-semibold text-slate-500 uppercase">Email Us</p>
+                <p class="font-display font-bold text-base sm:text-lg text-brand-navy group-hover:text-brand-red transition-colors break-all">twinrootskerala@gmail.com</p>
+                <p class="text-xs text-slate-500 mt-0.5">We reply within 24 hours</p>
+              </div>
+            </div>
+          </a>
+
+          <!-- WhatsApp Quick Action -->
+          <a href="https://wa.me/918075996879?text=Hello%20Twinroots,%20I%20have%20an%20inquiry%20regarding%20your%20services" target="_blank" class="block bg-emerald-50 hover:bg-emerald-100/80 p-6 rounded-2xl border border-emerald-200 transition group">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-xl bg-emerald-500 text-white flex items-center justify-center text-xl shadow-md group-hover:scale-110 transition-transform">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              <div>
+                <p class="text-xs font-semibold text-emerald-700 uppercase">Instant WhatsApp Chat</p>
+                <p class="font-display font-bold text-base sm:text-lg text-emerald-900">+91 8075996879</p>
+                <p class="text-xs text-emerald-700 mt-0.5">Quick responses & document sharing</p>
+              </div>
+            </div>
+          </a>
+
+          <!-- Location Info -->
+          <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-xl bg-slate-200 text-slate-700 flex items-center justify-center text-xl">
+                <i class="fa-solid fa-map-location-dot text-brand-navy"></i>
+              </div>
+              <div>
+                <p class="text-xs font-semibold text-slate-500 uppercase">Headquarters</p>
+                <p class="font-display font-bold text-base text-brand-navy">Mukkam - Calicut, Kerala</p>
+                <p class="text-xs text-slate-500">True Way Venture • Statewide Support</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Contact Form -->
+        <div class="lg:col-span-7 bg-slate-50 p-8 sm:p-10 rounded-3xl border border-slate-200">
+          <h3 class="font-display font-bold text-2xl text-brand-navy mb-2">Send an Inquiry</h3>
+          <p class="text-xs sm:text-sm text-slate-600 mb-6">Fill out this form and our team will get in touch with you promptly.</p>
+
+          <form id="contactForm" onsubmit="handleContactSubmit(event)" class="space-y-4">
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1">Your Name *</label>
+                <input type="text" id="contactName" required placeholder="Full Name" class="w-full p-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-brand-navy focus:outline-none text-sm bg-white" />
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1">Phone Number *</label>
+                <input type="tel" id="contactPhone" required placeholder="Phone Number" class="w-full p-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-brand-navy focus:outline-none text-sm bg-white" />
+              </div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1">Email Address</label>
+                <input type="email" id="contactEmail" placeholder="yourname@gmail.com" class="w-full p-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-brand-navy focus:outline-none text-sm bg-white" />
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1">Service Interested In *</label>
+                <select id="contactService" class="w-full p-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-brand-navy focus:outline-none text-sm bg-white">
+                  <option value="Insurance Policy">Insurance (Health, Motor, Life)</option>
+                  <option value="House Loan">House Loan</option>
+                  <option value="Vehicle Loan">Vehicle Loan</option>
+                  <option value="Rent a Driver">Rent a Driver Service</option>
+                  <option value="Vehicle Sales">Vehicle Buy / Sell</option>
+                  <option value="Job Consultation">Job Consultation & Placement</option>
+                  <option value="Other Solutions">Other / Multiple Solutions</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Message or Requirements *</label>
+              <textarea id="contactMessage" rows="4" required placeholder="Tell us more about what you need (e.g., loan amount, driver dates, vehicle requirements, etc.)..." class="w-full p-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-brand-navy focus:outline-none text-sm bg-white"></textarea>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-3 pt-2">
+              <button type="submit" class="flex-1 bg-brand-red hover:bg-brand-redDark text-white py-3.5 px-6 rounded-xl font-bold text-sm shadow-md transition flex items-center justify-center gap-2">
+                <i class="fa-solid fa-paper-plane"></i> Send via WhatsApp / Email
+              </button>
+              <a href="tel:8075996879" class="bg-brand-navy hover:bg-brand-navyLight text-white py-3.5 px-6 rounded-xl font-bold text-sm transition flex items-center justify-center gap-2">
+                <i class="fa-solid fa-phone"></i> Call Now
+              </a>
+            </div>
+
+            <div id="formSuccess" class="hidden p-4 rounded-xl bg-emerald-100 text-emerald-800 text-xs font-semibold text-center">
+              Thank you! Your inquiry has been prepared. Connecting you with our team now...
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- RENT A DRIVER MODAL -->
+  <div id="driverModal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="bg-white w-full max-w-lg rounded-3xl p-6 sm:p-8 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+      <button onclick="closeDriverModal()" class="absolute top-5 right-5 text-slate-400 hover:text-slate-700 text-xl">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="flex items-center gap-3 mb-4">
+        <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center text-lg">
+          <i class="fa-solid fa-steering-wheel"></i>
+        </div>
+        <div>
+          <h3 class="font-display font-bold text-xl text-brand-navy">Rent a Driver Booking</h3>
+          <p class="text-xs text-slate-500">Verified & experienced drivers across Kerala</p>
+        </div>
+      </div>
+
+      <form onsubmit="handleDriverBooking(event)" class="space-y-4">
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1">Your Name</label>
+          <input type="text" id="driverCustName" required placeholder="Full Name" class="w-full p-2.5 rounded-xl border border-slate-200 text-sm" />
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1">Your Contact Phone</label>
+          <input type="tel" id="driverCustPhone" required placeholder="Phone Number" class="w-full p-2.5 rounded-xl border border-slate-200 text-sm" />
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Trip Type</label>
+            <select id="driverTripType" class="w-full p-2.5 rounded-xl border border-slate-200 text-sm bg-white">
+              <option value="Local City Trip">Local City Trip</option>
+              <option value="Outstation / Long Route">Outstation Trip</option>
+              <option value="Daily / Full Day">Full Day Booking</option>
+              <option value="Night Emergency">Night Emergency</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Vehicle Transmission</label>
+            <select id="driverTransmission" class="w-full p-2.5 rounded-xl border border-slate-200 text-sm bg-white">
+              <option value="Manual">Manual Transmission</option>
+              <option value="Automatic">Automatic Transmission</option>
+              <option value="Commercial / SUV">Commercial / SUV</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1">Pickup Location & Date</label>
+          <input type="text" id="driverLocationDate" required placeholder="e.g. Ernakulam, 15th Oct 9:00 AM" class="w-full p-2.5 rounded-xl border border-slate-200 text-sm" />
+        </div>
+        
+        <button type="submit" class="w-full bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 rounded-xl transition flex items-center justify-center gap-2 shadow">
+          <i class="fa-brands fa-whatsapp text-lg"></i> Book Driver via WhatsApp
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-brand-navyDark text-slate-300 pt-16 pb-12 border-t border-brand-navy">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/10">
+        
+        <!-- Brand Column - Zoomed & Highlighted -->
+        <div class="lg:col-span-2 space-y-4">
+          <a href="#home" class="flex items-center gap-3.5 group inline-flex" title="Twinroots Home">
+            <div class="h-14 w-14 flex items-center justify-center">
+              <img 
+                src="assets/logo.svg" 
+                alt="Twinroots Logo" 
+                class="h-full w-full object-contain drop-shadow group-hover:scale-110 transition-transform"
+              />
+            </div>
+            <div>
+              <div class="flex items-center gap-1.5">
+                <span class="font-display font-black text-3xl tracking-wider text-white group-hover:text-amber-200 transition-colors">TWIN<span class="text-white">ROOTS</span></span>
+                <span class="w-2 h-2 rounded-sm bg-brand-red inline-block"></span>
+              </div>
+              <p class="text-[11px] tracking-[0.2em] uppercase font-bold text-amber-300">A Complete Solution Partner</p>
+            </div>
+          </a>
+          <p class="text-sm text-slate-300 leading-relaxed max-w-sm">
+            Twinroots is Kerala's trusted multi-service provider delivering unmatched excellence in Insurance, Home & Vehicle Loans, Professional Driver Rental, Pre-owned Vehicles, and Job Consultation.
+          </p>
+          <div class="flex items-center gap-3 pt-2">
+            <a href="https://wa.me/918075996879" target="_blank" class="w-10 h-10 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white flex items-center justify-center text-lg shadow transition transform hover:scale-110" title="WhatsApp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="tel:8075996879" class="w-10 h-10 rounded-xl bg-brand-red hover:bg-brand-redDark text-white flex items-center justify-center text-lg shadow transition transform hover:scale-110" title="Call">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+            <a href="mailto:twinrootskerala@gmail.com" class="w-10 h-10 rounded-xl bg-blue-600 hover:bg-blue-500 text-white flex items-center justify-center text-lg shadow transition transform hover:scale-110" title="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links - Zoomed & Highlighted -->
+        <div>
+          <h4 class="font-display font-extrabold text-white text-base tracking-wider uppercase mb-4 border-b border-white/15 pb-1">Quick Links</h4>
+          <ul class="space-y-2.5 text-sm text-slate-300 font-medium">
+            <li><a href="#home" class="hover:text-amber-300 transition flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[10px] text-brand-red"></i> Home</a></li>
+            <li><a href="#about" class="hover:text-amber-300 transition flex items-center gap-1.5 font-bold text-white"><i class="fa-solid fa-chevron-right text-[10px] text-brand-red"></i> About Us (True Way)</a></li>
+            <li><a href="#calculator" class="hover:text-amber-300 transition flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[10px] text-brand-red"></i> EMI Calculator</a></li>
+            <li><a href="#contact" class="hover:text-amber-300 transition flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[10px] text-brand-red"></i> Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div>
+          <h4 class="font-display font-bold text-white text-sm tracking-wider uppercase mb-4">Our Services</h4>
+          <ul class="space-y-2 text-xs sm:text-sm text-slate-400">
+            <li><a href="#insurance" class="hover:text-white transition">Insurance Coverage</a></li>
+            <li><a href="#loans" class="hover:text-white transition">House & Home Loans</a></li>
+            <li><a href="#loans" class="hover:text-white transition">Vehicle Finance</a></li>
+            <li><a href="#driver" class="hover:text-white transition">Rent a Driver</a></li>
+            <li><a href="#vehicles" class="hover:text-white transition">Vehicle Sales</a></li>
+            <li><a href="#consultation" class="hover:text-white transition">Job Consultation</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <h4 class="font-display font-bold text-white text-sm tracking-wider uppercase mb-4">Contact Info</h4>
+          <ul class="space-y-3 text-xs sm:text-sm text-slate-400">
+            <li class="flex items-start gap-2.5">
+              <i class="fa-solid fa-phone text-brand-red mt-1"></i>
+              <a href="tel:8075996879" class="hover:text-white transition font-medium text-white">+91 8075996879</a>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <i class="fa-solid fa-envelope text-brand-red mt-1"></i>
+              <a href="mailto:twinrootskerala@gmail.com" class="hover:text-white transition break-all">twinrootskerala@gmail.com</a>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <i class="fa-solid fa-location-dot text-brand-red mt-1"></i>
+              <span>Mukkam - Calicut, Kerala</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Copyright -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <p>© 2026 TWINROOTS - A Complete Solution Partner. All rights reserved.</p>
+        <p>Designed with care for speed, reliability & security.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP & MOBILE ACTION BAR -->
+  <div class="fixed bottom-6 right-6 z-40">
+    <a href="https://wa.me/918075996879?text=Hello%20Twinroots,%20I%20would%20like%20to%20know%20more%20about%20your%20services" target="_blank" rel="noopener noreferrer" class="w-14 h-14 bg-emerald-500 hover:bg-emerald-600 text-white rounded-full shadow-2xl flex items-center justify-center text-3xl transition-transform hover:scale-110 animate-pulse-subtle" title="Chat on WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+  </div>
+
+  <!-- MOBILE BOTTOM BAR (Sticky on small screens - Heightened & Highlighted) -->
+  <div class="sm:hidden fixed bottom-0 left-0 right-0 z-40 bg-brand-navyDark/98 backdrop-blur-md border-t-2 border-white/20 p-2.5 flex items-center gap-2.5 shadow-2xl">
+    <a href="tel:8075996879" class="flex-1 bg-gradient-to-r from-brand-red to-brand-redDark text-white py-3.5 rounded-xl font-black text-center text-sm flex items-center justify-center gap-2 shadow-lg active:scale-95 transition-transform">
+      <i class="fa-solid fa-phone animate-pulse"></i> Call 8075 996 879
+    </a>
+    <a href="https://wa.me/918075996879?text=Hello%20Twinroots,%20I%20am%20interested%20in%20your%20services" target="_blank" class="flex-1 bg-emerald-600 text-white py-3.5 rounded-xl font-black text-center text-sm flex items-center justify-center gap-2 shadow-lg active:scale-95 transition-transform">
+      <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp
+    </a>
+  </div>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    // Loan Type Switcher
+    let currentLoanType = 'home';
+    function setLoanType(type) {
+      currentLoanType = type;
+      const btnHome = document.getElementById('btnHomeLoan');
+      const btnVehicle = document.getElementById('btnVehicleLoan');
+      const amountSlider = document.getElementById('loanAmount');
+      const tenureSlider = document.getElementById('tenure');
+      const rateSlider = document.getElementById('interestRate');
+
+      if (type === 'home') {
+        btnHome.className = "px-5 py-2.5 rounded-xl font-bold text-sm bg-brand-navy text-white shadow-md transition";
+        btnVehicle.className = "px-5 py-2.5 rounded-xl font-bold text-sm bg-white text-slate-700 border border-slate-200 hover:bg-slate-100 transition";
+        amountSlider.max = 10000000;
+        amountSlider.value = 2500000;
+        tenureSlider.max = 30;
+        tenureSlider.value = 20;
+        rateSlider.value = 8.5;
+      } else {
+        btnVehicle.className = "px-5 py-2.5 rounded-xl font-bold text-sm bg-brand-navy text-white shadow-md transition";
+        btnHome.className = "px-5 py-2.5 rounded-xl font-bold text-sm bg-white text-slate-700 border border-slate-200 hover:bg-slate-100 transition";
+        amountSlider.max = 2500000;
+        amountSlider.value = 800000;
+        tenureSlider.max = 7;
+        tenureSlider.value = 5;
+        rateSlider.value = 9.5;
+      }
+      calculateEMI();
+    }
+
+    // EMI Calculator
+    function calculateEMI() {
+      const P = parseFloat(document.getElementById('loanAmount').value);
+      const annualR = parseFloat(document.getElementById('interestRate').value);
+      const tenureYears = parseFloat(document.getElementById('tenure').value);
+
+      document.getElementById('loanAmountText').innerText = '₹ ' + P.toLocaleString('en-IN');
+      document.getElementById('interestRateText').innerText = annualR.toFixed(1) + ' %';
+      document.getElementById('tenureText').innerText = tenureYears + ' ' + (tenureYears > 1 ? 'Years' : 'Year');
+
+      const r = (annualR / 12) / 100; // monthly rate
+      const n = tenureYears * 12; // total months
+
+      let emi = 0;
+      if (r === 0) {
+        emi = P / n;
+      } else {
+        emi = (P * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
+      }
+
+      const totalPayable = emi * n;
+      const totalInterest = totalPayable - P;
+
+      document.getElementById('emiResult').innerText = '₹ ' + Math.round(emi).toLocaleString('en-IN');
+      document.getElementById('principalText').innerText = '₹ ' + Math.round(P).toLocaleString('en-IN');
+      document.getElementById('totalInterestText').innerText = '₹ ' + Math.round(totalInterest).toLocaleString('en-IN');
+      document.getElementById('totalAmountText').innerText = '₹ ' + Math.round(totalPayable).toLocaleString('en-IN');
+    }
+
+    // Driver Modal
+    function openDriverModal() {
+      document.getElementById('driverModal').classList.remove('hidden');
+      document.getElementById('driverModal').classList.add('flex');
+    }
+    function closeDriverModal() {
+      document.getElementById('driverModal').classList.add('hidden');
+      document.getElementById('driverModal').classList.remove('flex');
+    }
+
+    function handleDriverBooking(e) {
+      e.preventDefault();
+      const name = document.getElementById('driverCustName').value;
+      const phone = document.getElementById('driverCustPhone').value;
+      const trip = document.getElementById('driverTripType').value;
+      const trans = document.getElementById('driverTransmission').value;
+      const loc = document.getElementById('driverLocationDate').value;
+
+      const message = `Hello Twinroots,\nI would like to book a driver:\n- Name: ${name}\n- Phone: ${phone}\n- Trip Type: ${trip}\n- Transmission: ${trans}\n- Location & Date: ${loc}`;
+      const url = `https://wa.me/918075996879?text=${encodeURIComponent(message)}`;
+      window.open(url, '_blank');
+      closeDriverModal();
+    }
+
+    // Hero Form Submit -> WhatsApp
+    function handleHeroSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('quickName').value;
+      const phone = document.getElementById('quickPhone').value;
+      const service = document.getElementById('quickService').value;
+      const note = document.getElementById('quickNote').value;
+
+      const message = `Hello Twinroots,\nI am interested in ${service}.\n- Name: ${name}\n- Phone: ${phone}${note ? '\n- Note: ' + note : ''}`;
+      const url = `https://wa.me/918075996879?text=${encodeURIComponent(message)}`;
+      window.open(url, '_blank');
+    }
+
+    // Main Contact Form Submit
+    function handleContactSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('contactName').value;
+      const phone = document.getElementById('contactPhone').value;
+      const email = document.getElementById('contactEmail').value;
+      const service = document.getElementById('contactService').value;
+      const messageText = document.getElementById('contactMessage').value;
+
+      const fullMessage = `Hello Twinroots,\nNew Inquiry from Website:\n- Name: ${name}\n- Phone: ${phone}\n- Email: ${email || 'N/A'}\n- Service: ${service}\n- Requirement: ${messageText}`;
+      
+      const successBox = document.getElementById('formSuccess');
+      successBox.classList.remove('hidden');
+
+      setTimeout(() => {
+        const waUrl = `https://wa.me/918075996879?text=${encodeURIComponent(fullMessage)}`;
+        window.open(waUrl, '_blank');
+      }, 500);
+    }
+
+    // Init EMI calculation on load
+    calculateEMI();
+  </script>
+</body>
+</html>
