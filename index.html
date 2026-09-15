@@ -52,6 +52,18 @@
     }
     .hero-gradient {
       background: linear-gradient(135deg, #0e1038 0%, #151853 50%, #1c216b 100%);
+      position: relative;
+    }
+    .hero-gradient::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url('assets/logo.svg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: min(80vw, 650px);
+      opacity: 0.06;
+      pointer-events: none;
     }
     .card-hover {
       transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -67,9 +79,61 @@
     .animate-pulse-subtle {
       animation: pulse-subtle 3s infinite ease-in-out;
     }
+    .font-malayalam {
+      font-family: 'Noto Sans Malayalam', 'Manjari', 'Gayathri', sans-serif !important;
+      line-height: 1.65 !important;
+      letter-spacing: 0.01em;
+    }
+    body {
+      background-color: #0e1038 !important;
+      color: #e2e8f0;
+      position: relative;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url('assets/logo.svg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: min(85vw, 700px);
+      opacity: 0.05;
+      pointer-events: none;
+      z-index: 0;
+    }
+    /* Ensure content sections remain transparent to show navy background & logo watermark */
+    section, div, header, footer {
+      position: relative;
+      z-index: 1;
+    }
+    .bg-white {
+      background-color: rgba(255, 255, 255, 0.04) !important;
+      backdrop-filter: blur(10px);
+    }
+    .bg-slate-50 {
+      background-color: rgba(255, 255, 255, 0.03) !important;
+    }
+    .border-slate-200, .border-slate-100 {
+      border-color: rgba(255, 255, 255, 0.12) !important;
+    }
+    .text-slate-800, .text-slate-700, .text-slate-600 {
+      color: #cbd5e1 !important;
+    }
+    .text-slate-500, .text-slate-400 {
+      color: #94a3b8 !important;
+    }
+    .text-brand-navy {
+      color: #ffffff !important;
+    }
+    .bg-brand-navy\/5 {
+      background-color: rgba(255, 255, 255, 0.08) !important;
+    }
+    .border-brand-navy\/15 {
+      border-color: rgba(255, 255, 255, 0.2) !important;
+    }
   </style>
 </head>
-<body class="font-sans text-slate-800 bg-slate-50 antialiased selection:bg-brand-red selection:text-white">
+<body class="font-sans text-slate-200 bg-brand-navyDark antialiased selection:bg-brand-red selection:text-white">
 
   <!-- TOP INFO BAR -->
   <header class="bg-brand-navyDark text-slate-300 text-xs sm:text-sm border-b border-brand-navy/60">
@@ -378,7 +442,7 @@
         </div>
         <!-- Quick Nav Buttons -->
         <div class="flex items-center gap-2">
-          <a href="#home" class="px-4 py-2 rounded-xl font-bold text-xs sm:text-sm bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all flex items-center gap-2 border border-slate-200">
+          <a href="#home" class="px-4 py-2 rounded-xl font-bold text-xs sm:text-sm bg-white/10 hover:bg-white/20 text-white transition-all flex items-center gap-2 border border-white/20">
             <i class="fa-solid fa-arrow-up text-brand-red"></i>
             <span>English Story (Hero)</span>
           </a>
@@ -390,153 +454,127 @@
       </div>
 
       <!-- ================= 1. MALAYALAM CONTENT (FIRST & ACTIVE) ================= -->
-      <div id="contentMalayalam" class="space-y-12">
-        <div class="grid lg:grid-cols-12 gap-10 items-start">
+      <div id="contentMalayalam" class="space-y-10">
+        <div class="space-y-6">
           
-          <!-- Left Column: Malayalam Services & Profile -->
-          <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-navy/5 border border-brand-navy/15 text-xs font-bold uppercase tracking-wider text-brand-navy">
+            <span class="w-2 h-2 rounded-full bg-brand-red animate-pulse"></span>
+            <span>ഞങ്ങളുടെ സേവനങ്ങൾ • Mukkam, Calicut</span>
+          </div>
+
+          <h3 class="font-display font-black text-3xl sm:text-4xl text-brand-navy font-malayalam leading-tight">
+            ട്വിൻറൂട്ട്സ് — <span class="text-brand-red">ഞങ്ങളുടെ സേവനങ്ങൾ</span>
+          </h3>
+
+          <p class="text-base sm:text-lg text-slate-700 font-malayalam leading-relaxed max-w-4xl">
+            കാലിക്കറ്റ് <strong>മുക്കത്ത്</strong> രണ്ട് സുഹൃത്തുക്കൾ ചേർന്ന് ആരംഭിച്ച ഒരു കംപ്ലീറ്റ് സൊല്യൂഷൻ പാർട്ണർ സംരംഭമാണ് <strong>TWINROOTS</strong>. ജീവിതത്തിലും ബിസിനസിലും ആളുകൾ നേരിടുന്ന ആവശ്യങ്ങൾക്ക് വിശ്വസ്തതയോടെയുള്ള യഥാർത്ഥ പരിഹാരങ്ങൾ ഞങ്ങൾ ഒരു കുടക്കീഴിൽ നൽകുന്നു.
+          </p>
+
+          <!-- 6 Services in Malayalam (Cards Grid aligned across full width) -->
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-4">
             
-            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-navy/5 border border-brand-navy/15 text-xs font-bold uppercase tracking-wider text-brand-navy">
-              <span class="w-2 h-2 rounded-full bg-brand-red animate-pulse"></span>
-              <span>ഞങ്ങളുടെ സേവനങ്ങൾ • Mukkam, Calicut</span>
-            </div>
-
-            <h3 class="font-display font-black text-3xl sm:text-4xl text-brand-navy font-malayalam leading-tight">
-              ട്വിൻറൂട്ട്സ് — <span class="text-brand-red">ഞങ്ങളുടെ സേവനങ്ങൾ</span>
-            </h3>
-
-            <p class="text-base sm:text-lg text-slate-700 font-malayalam leading-relaxed">
-              കാലിക്കറ്റ് <strong>മുക്കത്ത്</strong> രണ്ട് സുഹൃത്തുക്കൾ ചേർന്ന് ആരംഭിച്ച ഒരു കംപ്ലീറ്റ് സൊല്യൂഷൻ പാർട്ണർ സംരംഭമാണ് <strong>TWINROOTS</strong>. ജീവിതത്തിലും ബിസിനസിലും ആളുകൾ നേരിടുന്ന ആവശ്യങ്ങൾക്ക് വിശ്വസ്തതയോടെയുള്ള യഥാർത്ഥ പരിഹാരങ്ങൾ ഞങ്ങൾ ഒരു കുടക്കീഴിൽ നൽകുന്നു.
-            </p>
-
-            <!-- 6 Services in Malayalam (Cards Grid) -->
-            <div class="grid sm:grid-cols-2 gap-4 pt-2">
-              
-              <!-- 1. ലോൺ സേവനങ്ങൾ -->
-              <div class="bg-slate-50 hover:bg-white p-5 rounded-2xl border border-slate-200 hover:border-brand-navy hover:shadow-md transition-all">
-                <div class="w-10 h-10 rounded-xl bg-emerald-500/15 text-emerald-700 flex items-center justify-center text-lg mb-3">
+            <!-- 1. ലോൺ സേവനങ്ങൾ -->
+            <div class="bg-slate-50 hover:bg-white p-6 rounded-2xl border border-slate-200 hover:border-brand-navy hover:shadow-lg transition-all flex flex-col justify-between">
+              <div>
+                <div class="w-12 h-12 rounded-xl bg-emerald-500/15 text-emerald-700 flex items-center justify-center text-xl mb-4">
                   <i class="fa-solid fa-hand-holding-dollar"></i>
                 </div>
-                <h4 class="font-bold text-base text-brand-navy font-malayalam mb-2">ലോൺ സേവനങ്ങൾ</h4>
-                <ul class="space-y-1.5 text-xs text-slate-600 font-malayalam">
-                  <li class="flex items-start gap-1.5"><i class="fa-solid fa-check text-brand-red mt-1"></i> 2011 മുതലുള്ള വാഹനങ്ങൾക്ക് ലോൺ സൗകര്യം.</li>
-                  <li class="flex items-start gap-1.5"><i class="fa-solid fa-check text-brand-red mt-1"></i> ഭവന വായ്പകൾ & പ്രോപ്പർട്ടി ലോണുകൾ.</li>
-                  <li class="flex items-start gap-1.5"><i class="fa-solid fa-check text-brand-red mt-1"></i> കുറഞ്ഞ പലിശ നിരക്കുകൾ & കുറഞ്ഞ ഡോക്യുമെന്റേഷൻ.</li>
-                  <li class="flex items-start gap-1.5"><i class="fa-solid fa-check text-brand-red mt-1"></i> കേരളത്തിലെ പ്രമുഖ ബാങ്കുകളുടേയും NBFCകളുടെയും സേവനം.</li>
+                <h4 class="font-bold text-lg text-brand-navy font-malayalam mb-3">ലോൺ സേവനങ്ങൾ</h4>
+                <ul class="space-y-2 text-xs sm:text-sm text-slate-600 font-malayalam">
+                  <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brand-red mt-1"></i> 2011 മുതലുള്ള വാഹനങ്ങൾക്ക് ലോൺ സൗകര്യം.</li>
+                  <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brand-red mt-1"></i> ഭവന വായ്പകൾ & പ്രോപ്പർട്ടി ലോണുകൾ.</li>
+                  <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brand-red mt-1"></i> കുറഞ്ഞ പലിശ നിരക്കുകൾ & കുറഞ്ഞ ഡോക്യുമെന്റേഷൻ.</li>
+                  <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brand-red mt-1"></i> കേരളത്തിലെ പ്രമുഖ ബാങ്കുകളുടേയും NBFCകളുടെയും സേവനം.</li>
                 </ul>
               </div>
-
-              <!-- 2. ഇൻഷുറൻസ് സേവനം -->
-              <div class="bg-slate-50 hover:bg-white p-5 rounded-2xl border border-slate-200 hover:border-brand-navy hover:shadow-md transition-all">
-                <div class="w-10 h-10 rounded-xl bg-blue-500/15 text-blue-700 flex items-center justify-center text-lg mb-3">
-                  <i class="fa-solid fa-shield-halved"></i>
-                </div>
-                <h4 class="font-bold text-base text-brand-navy font-malayalam mb-2">ഇൻഷുറൻസ് സേവനം</h4>
-                <ul class="space-y-1.5 text-xs text-slate-600 font-malayalam">
-                  <li class="flex items-start gap-1.5"><i class="fa-solid fa-check text-brand-red mt-1"></i> പ്രമുഖ കമ്പനികളുടെ വാഹന - ഹെൽത്ത് ഇൻഷുറൻസ്.</li>
-                  <li class="flex items-start gap-1.5"><i class="fa-solid fa-check text-brand-red mt-1"></i> കുറഞ്ഞ പ്രീമിയം & ഡോർ സ്റ്റെപ്പ് സർവീസ്.</li>
-                  <li class="flex items-start gap-1.5"><i class="fa-solid fa-check text-brand-red mt-1"></i> 24 x 7 ഓൺലൈൻ സേവനം.</li>
-                  <li class="flex items-start gap-1.5"><i class="fa-solid fa-check text-brand-red mt-1"></i> RC, പഴയ ഇൻഷുറൻസ് അയച്ച് തന്നാൽ ഉടൻ പുതുക്കാം.</li>
-                </ul>
-              </div>
-
-              <!-- 3. പഴയ വാഹനങ്ങൾ -->
-              <div class="bg-slate-50 hover:bg-white p-5 rounded-2xl border border-slate-200 hover:border-brand-navy hover:shadow-md transition-all">
-                <div class="w-10 h-10 rounded-xl bg-purple-500/15 text-purple-700 flex items-center justify-center text-lg mb-3">
-                  <i class="fa-solid fa-car-side"></i>
-                </div>
-                <h4 class="font-bold text-base text-brand-navy font-malayalam mb-2">പഴയ വാഹനങ്ങൾ വാങ്ങാനും വിൽക്കാനും</h4>
-                <ul class="space-y-1.5 text-xs text-slate-600 font-malayalam">
-                  <li class="flex items-start gap-1.5"><i class="fa-solid fa-check text-brand-red mt-1"></i> കൈവശമുള്ള വാഹനങ്ങൾ വിൽക്കാനോ വാങ്ങാനോ ബന്ധപ്പെടാം.</li>
-                  <li class="flex items-start gap-1.5"><i class="fa-solid fa-check text-brand-red mt-1"></i> വീഡിയോകൾ, സോഷ്യൽ മീഡിയ പോസ്റ്ററുകൾ വഴി വിപണനം.</li>
-                  <li class="flex items-start gap-1.5"><i class="fa-solid fa-check text-brand-red mt-1"></i> യൂസ്ഡ് വെഹിക്കിൾ ഡീലേഴ്സിനും കാര്യക്ഷമമായി ഉപയോഗിക്കാം.</li>
-                </ul>
-              </div>
-
-              <!-- 4. സെയിൽ & മാർക്കറ്റിങ് -->
-              <div class="bg-slate-50 hover:bg-white p-5 rounded-2xl border border-slate-200 hover:border-brand-navy hover:shadow-md transition-all">
-                <div class="w-10 h-10 rounded-xl bg-rose-500/15 text-rose-700 flex items-center justify-center text-lg mb-3">
-                  <i class="fa-solid fa-chart-line"></i>
-                </div>
-                <h4 class="font-bold text-base text-brand-navy font-malayalam mb-2">സെയിൽ & മാർക്കറ്റിങ് സർവ്വീസ്</h4>
-                <ul class="space-y-1.5 text-xs text-slate-600 font-malayalam">
-                  <li class="flex items-start gap-1.5"><i class="fa-solid fa-check text-brand-red mt-1"></i> ബിസിനസ് മാർക്കറ്റിങ് ഉപദേശങ്ങളും സെയിൽസ് മെറ്റീരിയലുകളും.</li>
-                  <li class="flex items-start gap-1.5"><i class="fa-solid fa-check text-brand-red mt-1"></i> വിൽപന വർദ്ധിപ്പിക്കാൻ സെയിൽസ് ട്രെയിനിംഗ് പ്രോഗ്രാം.</li>
-                  <li class="flex items-start gap-1.5"><i class="fa-solid fa-check text-brand-red mt-1"></i> ആകർഷകമായ കണ്ടന്റുകൾ & സോഷ്യൽ മീഡിയ ക്യാപ്ഷനുകൾ.</li>
-                </ul>
-              </div>
-
-              <!-- 5. ഡ്രൈവർ ഫാക്കൽറ്റി -->
-              <div class="bg-slate-50 hover:bg-white p-5 rounded-2xl border border-slate-200 hover:border-brand-navy hover:shadow-md transition-all">
-                <div class="w-10 h-10 rounded-xl bg-amber-500/15 text-amber-700 flex items-center justify-center text-lg mb-3">
-                  <i class="fa-solid fa-id-card"></i>
-                </div>
-                <h4 class="font-bold text-base text-brand-navy font-malayalam mb-2">ഡ്രൈവർ ഫാക്കൽറ്റി</h4>
-                <ul class="space-y-1.5 text-xs text-slate-600 font-malayalam">
-                  <li class="flex items-start gap-1.5"><i class="fa-solid fa-check text-brand-red mt-1"></i> യാത്രകൾ സുരക്ഷിതവും മടുപ്പില്ലാത്തതുമാക്കാൻ ഡ്രൈവേഴ്സ്.</li>
-                  <li class="flex items-start gap-1.5"><i class="fa-solid fa-check text-brand-red mt-1"></i> കുറഞ്ഞ നിരക്കിൽ എക്സ്പീരിയൻസ്ഡ് ആയ ഡ്രൈവർമാർ.</li>
-                  <li class="flex items-start gap-1.5"><i class="fa-solid fa-check text-brand-red mt-1"></i> ലോക്കൽ & ഔട്ട്സ്റ്റേഷൻ ട്രിപ്പുകൾ.</li>
-                </ul>
-              </div>
-
-              <!-- 6. തൊഴിൽ സേവനങ്ങൾ -->
-              <div class="bg-slate-50 hover:bg-white p-5 rounded-2xl border border-slate-200 hover:border-brand-navy hover:shadow-md transition-all">
-                <div class="w-10 h-10 rounded-xl bg-teal-500/15 text-teal-700 flex items-center justify-center text-lg mb-3">
-                  <i class="fa-solid fa-user-group"></i>
-                </div>
-                <h4 class="font-bold text-base text-brand-navy font-malayalam mb-2">തൊഴിൽ സേവനങ്ങൾ</h4>
-                <ul class="space-y-1.5 text-xs text-slate-600 font-malayalam">
-                  <li class="flex items-start gap-1.5"><i class="fa-solid fa-check text-brand-red mt-1"></i> 'TWINROOTS CONNECT' റിക്രൂട്ട്മെന്റ് നെറ്റ്‌വർക്ക്.</li>
-                  <li class="flex items-start gap-1.5"><i class="fa-solid fa-check text-brand-red mt-1"></i> തൊഴിൽ ദാതാക്കളെയും അന്വേഷകരേയും ബന്ധിപ്പിക്കുന്നു.</li>
-                  <li class="flex items-start gap-1.5"><i class="fa-solid fa-check text-brand-red mt-1"></i> ഉദ്യോഗാർത്ഥികൾക്കും കമ്പനികൾക്കും സ്വാഗതം.</li>
-                </ul>
-              </div>
-
             </div>
 
-            <!-- Direct Malayalam Helpline Buttons -->
-            <div class="flex flex-col sm:flex-row gap-3 pt-2">
-              <a href="tel:8075996879" class="flex-1 bg-gradient-to-r from-brand-red to-brand-redDark text-white py-3.5 px-6 rounded-2xl font-bold text-sm text-center shadow-lg shadow-brand-red/30 hover:scale-105 transition flex items-center justify-center gap-2">
-                <i class="fa-solid fa-phone"></i> വിളിക്കുക: 8075 996 879
-              </a>
-              <a href="https://wa.me/918075996879?text=Hello%20Twinroots,%20I%20am%20interested%20in%20your%20services" target="_blank" class="flex-1 bg-emerald-600 hover:bg-emerald-500 text-white py-3.5 px-6 rounded-2xl font-bold text-sm text-center shadow-lg shadow-emerald-600/30 hover:scale-105 transition flex items-center justify-center gap-2">
-                <i class="fa-brands fa-whatsapp text-lg"></i> വാട്സാപ്പിൽ മെസ്സേജ് അയക്കൂ
-              </a>
+            <!-- 2. ഇൻഷുറൻസ് സേവനം -->
+            <div class="bg-slate-50 hover:bg-white p-6 rounded-2xl border border-slate-200 hover:border-brand-navy hover:shadow-lg transition-all flex flex-col justify-between">
+              <div>
+                <div class="w-12 h-12 rounded-xl bg-blue-500/15 text-blue-700 flex items-center justify-center text-xl mb-4">
+                  <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <h4 class="font-bold text-lg text-brand-navy font-malayalam mb-3">ഇൻഷുറൻസ് സേവനം</h4>
+                <ul class="space-y-2 text-xs sm:text-sm text-slate-600 font-malayalam">
+                  <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brand-red mt-1"></i> പ്രമുഖ കമ്പനികളുടെ വാഹന - ഹെൽത്ത് ഇൻഷുറൻസ്.</li>
+                  <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brand-red mt-1"></i> കുറഞ്ഞ പ്രീമിയം & ഡോർ സ്റ്റെപ്പ് സർവീസ്.</li>
+                  <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brand-red mt-1"></i> 24 x 7 ഓൺലൈൻ സേവനം.</li>
+                  <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brand-red mt-1"></i> RC, പഴയ ഇൻഷുറൻസ് അയച്ച് തന്നാൽ ഉടൻ പുതുക്കാം.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- 3. പഴയ വാഹനങ്ങൾ -->
+            <div class="bg-slate-50 hover:bg-white p-6 rounded-2xl border border-slate-200 hover:border-brand-navy hover:shadow-lg transition-all flex flex-col justify-between">
+              <div>
+                <div class="w-12 h-12 rounded-xl bg-purple-500/15 text-purple-700 flex items-center justify-center text-xl mb-4">
+                  <i class="fa-solid fa-car-side"></i>
+                </div>
+                <h4 class="font-bold text-lg text-brand-navy font-malayalam mb-3">പഴയ വാഹനങ്ങൾ വാങ്ങാനും വിൽക്കാനും</h4>
+                <ul class="space-y-2 text-xs sm:text-sm text-slate-600 font-malayalam">
+                  <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brand-red mt-1"></i> കൈവശമുള്ള വാഹനങ്ങൾ വിൽക്കാനോ വാങ്ങാനോ ബന്ധപ്പെടാം.</li>
+                  <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brand-red mt-1"></i> വീഡിയോകൾ, സോഷ്യൽ മീഡിയ പോസ്റ്ററുകൾ വഴി വിപണനം.</li>
+                  <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brand-red mt-1"></i> യൂസ്ഡ് വെഹിക്കിൾ ഡീലേഴ്സിനും കാര്യക്ഷമമായി ഉപയോഗിക്കാം.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- 4. സെയിൽ & മാർക്കറ്റിങ് -->
+            <div class="bg-slate-50 hover:bg-white p-6 rounded-2xl border border-slate-200 hover:border-brand-navy hover:shadow-lg transition-all flex flex-col justify-between">
+              <div>
+                <div class="w-12 h-12 rounded-xl bg-rose-500/15 text-rose-700 flex items-center justify-center text-xl mb-4">
+                  <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <h4 class="font-bold text-lg text-brand-navy font-malayalam mb-3">സെയിൽ & മാർക്കറ്റിങ് സർവ്വീസ്</h4>
+                <ul class="space-y-2 text-xs sm:text-sm text-slate-600 font-malayalam">
+                  <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brand-red mt-1"></i> ബിസിനസ് മാർക്കറ്റിങ് ഉപദേശങ്ങളും സെയിൽസ് മെറ്റീരിയലുകളും.</li>
+                  <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brand-red mt-1"></i> വിൽപന വർദ്ധിപ്പിക്കാൻ സെയിൽസ് ട്രെയിനിംഗ് പ്രോഗ്രാം.</li>
+                  <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brand-red mt-1"></i> ആകർഷകമായ കണ്ടന്റുകൾ & സോഷ്യൽ മീഡിയ ക്യാപ്ഷനുകൾ.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- 5. ഡ്രൈവർ ഫാക്കൽറ്റി -->
+            <div class="bg-slate-50 hover:bg-white p-6 rounded-2xl border border-slate-200 hover:border-brand-navy hover:shadow-lg transition-all flex flex-col justify-between">
+              <div>
+                <div class="w-12 h-12 rounded-xl bg-amber-500/15 text-amber-700 flex items-center justify-center text-xl mb-4">
+                  <i class="fa-solid fa-id-card"></i>
+                </div>
+                <h4 class="font-bold text-lg text-brand-navy font-malayalam mb-3">ഡ്രൈവർ ഫാക്കൽറ്റി</h4>
+                <ul class="space-y-2 text-xs sm:text-sm text-slate-600 font-malayalam">
+                  <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brand-red mt-1"></i> യാത്രകൾ സുരക്ഷിതവും മടുപ്പില്ലാത്തതുമാക്കാൻ ഡ്രൈവേഴ്സ്.</li>
+                  <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brand-red mt-1"></i> കുറഞ്ഞ നിരക്കിൽ എക്സ്പീരിയൻസ്ഡ് ആയ ഡ്രൈവർമാർ.</li>
+                  <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brand-red mt-1"></i> ലോക്കൽ & ഔട്ട്സ്റ്റേഷൻ ട്രിപ്പുകൾ.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- 6. തൊഴിൽ സേവനങ്ങൾ -->
+            <div class="bg-slate-50 hover:bg-white p-6 rounded-2xl border border-slate-200 hover:border-brand-navy hover:shadow-lg transition-all flex flex-col justify-between">
+              <div>
+                <div class="w-12 h-12 rounded-xl bg-teal-500/15 text-teal-700 flex items-center justify-center text-xl mb-4">
+                  <i class="fa-solid fa-user-group"></i>
+                </div>
+                <h4 class="font-bold text-lg text-brand-navy font-malayalam mb-3">തൊഴിൽ സേവനങ്ങൾ</h4>
+                <ul class="space-y-2 text-xs sm:text-sm text-slate-600 font-malayalam">
+                  <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brand-red mt-1"></i> 'TWINROOTS CONNECT' റിക്രൂട്ട്മെന്റ് നെറ്റ്‌വർക്ക്.</li>
+                  <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brand-red mt-1"></i> തൊഴിൽ ദാതാക്കളെയും അന്വേഷകരേയും ബന്ധിപ്പിക്കുന്നു.</li>
+                  <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brand-red mt-1"></i> ഉദ്യോഗാർത്ഥികൾക്കും കമ്പനികൾക്കും സ്വാഗതം.</li>
+                </ul>
+              </div>
             </div>
 
           </div>
 
-          <!-- Right Column: Malayalam Official Poster Display -->
-          <div class="lg:col-span-5 space-y-6">
-            <div class="bg-gradient-to-b from-brand-navyDark via-brand-navy to-brand-navyDark rounded-3xl p-6 sm:p-8 text-white shadow-2xl border border-white/10 relative overflow-hidden">
-              
-              <div class="flex items-center justify-between pb-4 border-b border-white/15 mb-4">
-                <div class="flex items-center gap-3">
-                <div class="w-13 h-13 sm:w-14 sm:h-14 flex items-center justify-center">
-                  <img src="assets/logo.svg" alt="Twinroots Logo" class="h-full w-full object-contain drop-shadow-lg" />
-                </div>
-                  <div>
-                    <h4 class="font-display font-black text-xl tracking-wider text-white">TWINROOTS</h4>
-                    <p class="text-[10px] tracking-widest text-slate-300 uppercase">ഔദ്യോഗിക അറിയിപ്പ്</p>
-                  </div>
-                </div>
-                <span class="px-3 py-1 rounded-full bg-brand-red text-white text-xs font-bold">മുക്കം, കാലിക്കറ്റ്</span>
-              <!-- Official Malayalam Poster Image -->
-              <div class="rounded-2xl overflow-hidden shadow-2xl border-2 border-white/20 bg-black/40 mb-5 group relative">
-                <img 
-                  src="assets/about-malayalam.jpg" 
-                  alt="Twinroots Malayalam Services Poster" 
-                  class="w-full h-auto object-contain max-h-[460px] mx-auto rounded-xl transition duration-500 group-hover:scale-105"
-                />
-              </div>
-
-              <div class="p-4 rounded-2xl bg-white/10 border border-white/15 text-xs text-slate-200 space-y-1.5 font-malayalam">
-                <p><i class="fa-solid fa-phone text-brand-red mr-1.5"></i> <strong>ഫോൺ:</strong> 8075 996 879</p>
-                <p><i class="fa-solid fa-envelope text-brand-red mr-1.5"></i> <strong>ഇമെയിൽ:</strong> twinrootskerala@gmail.com</p>
-                <p><i class="fa-solid fa-location-dot text-brand-red mr-1.5"></i> <strong>ഓഫീസ്:</strong> CALICUT, MUKKAM, KERALA</p>
-              </div>
-
-            </div>
+          <!-- Direct Malayalam Helpline Buttons -->
+          <div class="flex flex-col sm:flex-row gap-4 pt-4 max-w-2xl">
+            <a href="tel:8075996879" class="flex-1 bg-gradient-to-r from-brand-red to-brand-redDark text-white py-3.5 px-6 rounded-2xl font-bold text-sm text-center shadow-lg shadow-brand-red/30 hover:scale-105 transition flex items-center justify-center gap-2">
+              <i class="fa-solid fa-phone"></i> വിളിക്കുക: 8075 996 879
+            </a>
+            <a href="https://wa.me/918075996879?text=Hello%20Twinroots,%20I%20am%20interested%20in%20your%20services" target="_blank" class="flex-1 bg-emerald-600 hover:bg-emerald-500 text-white py-3.5 px-6 rounded-2xl font-bold text-sm text-center shadow-lg shadow-emerald-600/30 hover:scale-105 transition flex items-center justify-center gap-2">
+              <i class="fa-brands fa-whatsapp text-lg"></i> വാട്സാപ്പിൽ മെസ്സേജ് അയക്കൂ
+            </a>
           </div>
 
         </div>
